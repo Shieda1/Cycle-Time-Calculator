@@ -20,7 +20,7 @@ const variable2 = document.getElementById('variable2');
 
 cycletimeRadio.addEventListener('click', function() {
   variable1.textContent = 'Available production time';
-  variable2.textContent = 'Produced';
+  variable2.textContent = 'Produced units';
   availableproductiontime = v1;
   produced = v2;
   result.textContent = '';
@@ -28,7 +28,7 @@ cycletimeRadio.addEventListener('click', function() {
 
 availableproductiontimeRadio.addEventListener('click', function() {
   variable1.textContent = 'Cycle time';
-  variable2.textContent = 'Produced';
+  variable2.textContent = 'Produced units';
   cycletime = v1;
   produced = v2;
   result.textContent = '';
@@ -51,7 +51,7 @@ btn.addEventListener('click', function() {
     result.textContent = `Available production time = ${computeavailableproductiontime().toFixed(2)}`;
 
   else if(producedRadio.checked)
-    result.textContent = `Produced = ${computeproduced().toFixed(2)}`;
+    result.textContent = `Produced units = ${computeproduced().toFixed(2)}`;
 })
 
 // calculation
